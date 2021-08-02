@@ -67,7 +67,11 @@ while (Number(openQuestion)) {
       output = Number(number1) * Number(number2);
       break;
     case '4':
-      output = Number(number1) / Number(number2);
+      if (number2 === 0) {
+        prompt("You can't divide by zero.");
+      } else {
+        output = Number(number1) / Number(number2);
+      }
       break;
   }
 

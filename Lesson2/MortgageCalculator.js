@@ -8,14 +8,14 @@ function prompt(message) {
 //get input from user, check for edge cases & return it for assignment
 function receiveInput(variableName) {
   let input = readline.question();
-  let emptpyCheck = input.trim() === '' ? true : false;
-  let typeCheck = Number.isNaN(Number(input)) ? true : false;
+  let emptpyCheck = input.trim() === '';
+  let typeCheck = Number.isNaN(Number(input));
 
   while (emptpyCheck || typeCheck) {
     prompt(`Please enter the ${variableName} as a number.`);
     input = readline.question();
-    emptpyCheck = input.trim() === '' ? true : false;
-    typeCheck = Number.isNaN(Number(input)) ? true : false;
+    emptpyCheck = input.trim() === '';
+    typeCheck = Number.isNaN(Number(input));
   }
   return input;
 }
@@ -54,7 +54,7 @@ apr = Number(apr) / 100;
 InputDurationYears = Number(InputDurationYears);
 InputDurationMonths = Number(InputDurationMonths);
 
-//Calculate needed variables: Duration in months & monthly interest rate
+//Calculate needed variables: Total duration in months & monthly interest rate
 let monthlyInterestRate = apr / 12;
 
 let loanDuration = (InputDurationYears * 12) + InputDurationMonths;

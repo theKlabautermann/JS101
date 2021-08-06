@@ -1,0 +1,26 @@
+{
+  "Englisch": {
+    "welcome" : "Welcome to Calculator!",
+    "firstNumber": "What's the first number?",
+    "secondNumber": "What's the second number?",
+    "operator" : "What operation would you like to perform\n1) Add 2) Substract 3) Multiply 4) Divide",
+    "numberError" : "Hmm... that doesn't look like a valid number.",
+    "operatorError" : "Must choose 1, 2, 3 or 4",
+    "closing" : "Do you want to perform another calculation?\n'n') No 'y') Yes",
+    "closingError" : "Must choose 'y' or 'n",
+    "result" : "The result is: ",
+    "divideError" : "You can't divide by zero."
+  },
+  "Deutsch": {
+    "welcome" : "Wilkommen im Calculator",
+    "firstNumber": "Was ist die erste Nummer?",
+    "secondNumber": "Was ist die zweite Nummer?",
+    "operator" : "Welche Rechenoperation willst du durchführen?\n1) Addition 2) Substraktion 3) Multiplikation 4) Division",
+    "numberError" : "Hmm... das sieht nicht aus wie eine valide Nummer.",
+    "operatorError" : "Wähle 1, 2, 3 oder 4",
+    "closing" : "Willst du eine weitere Rechnung durchführen?\n'n') Nein 'y') Ja",
+    "closingError" : "Wähle 'y' für 'Ja' oder 'n' für 'nein'",
+    "result" : "Das Ergebnis ist: ",
+    "divideError" : "Du kannst nicht durch 0 teilen."
+  }
+}

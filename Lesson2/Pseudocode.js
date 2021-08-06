@@ -30,3 +30,4 @@ Set function with one argument that is expected to be an array
       add the element to the result array
   print result array
 End
+*/

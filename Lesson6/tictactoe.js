@@ -3,6 +3,7 @@ const INITIAL_MARKER = ' ';
 const HUMAN_MARKER = 'X';
 const COMPUTER_MARKER = 'O';
 const WINS_FOR_MATCH = 5;
+const MIDDLE_SQUARE = 5;
 const WINNING_LINES = [
   [1, 2, 3], [4, 5, 6], [7, 8, 9],
   [1, 4, 7], [2, 5, 8], [3, 6, 9],
@@ -102,8 +103,8 @@ function computerChoosesSquare(board) {
   } else if (decidingMoves(board, HUMAN_MARKER)) {
     square = decidingMoves(board, HUMAN_MARKER);
     board[square] = COMPUTER_MARKER;
-  } else if (board[5] === INITIAL_MARKER) {
-    board[5] = COMPUTER_MARKER;
+  } else if (board[MIDDLE_SQUARE] === INITIAL_MARKER) {
+    board[MIDDLE_SQUARE] = COMPUTER_MARKER;
   } else {
     let randomIndex = Math.floor(Math.random() * emptySquares(board).length);
 
